@@ -1,0 +1,185 @@
+/* تنسيق عام */
+body {
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* عنوان التطبيق */
+.main .block-container {
+    direction: rtl;
+    text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    text-align: right;
+}
+
+/* أزرار التطبيق */
+.stButton>button {
+    width: 100%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.stDownloadButton>button {
+    width: 100%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* مخطط الشريط الجانبي */
+div[data-testid="stSidebar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* إدخال النص والرقم */
+div[data-baseweb="input"] {
+    direction: rtl;
+}
+
+div[data-baseweb="base-input"] {
+    direction: rtl;
+}
+
+/* الجداول والبيانات */
+[data-testid="stTable"] {
+    direction: rtl;
+}
+
+div[data-testid="stDataFrame"] {
+    direction: rtl;
+}
+
+/* المقاييس */
+div[data-testid="metric-container"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* التبويبات */
+button[role="tab"] {
+    font-weight: bold;
+    direction: rtl;
+}
+
+/* بطاقات العرض */
+div.stCard {
+    direction: rtl;
+    text-align: right;
+}
+
+/* تنسيق تعزيز واجهة المستخدم */
+div.stAlert {
+    direction: rtl;
+    text-align: right;
+}
+
+/* الأقسام القابلة للطي */
+details {
+    direction: rtl;
+    text-align: right;
+}
+
+/* زر التحميل المخصص */
+.download-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* البطاقات المخصصة */
+.custom-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.info-card {
+    background-color: #f0f7ff;
+    border-right: 5px solid #3498db;
+}
+
+.success-card {
+    background-color: #f0fff4;
+    border-right: 5px solid #2ecc71;
+}
+
+.warning-card {
+    background-color: #fffaf0;
+    border-right: 5px solid #f39c12;
+}
+
+/* ألوان النص */
+.text-success {
+    color: #2ecc71;
+}
+
+.text-warning {
+    color: #f39c12;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
+
+.text-info {
+    color: #3498db;
+}
+
+/* تخصيص لواجهة المستخدم العربية */
+.arabic-ui {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* تأثيرات إضافية */
+.highlight {
+    background-color: rgba(255, 255, 0, 0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* شريط التقدم */
+div[data-testid="stProgressBar"] {
+    direction: rtl;
+}
+
+/* CSS للوضع المظلم */
+@media (prefers-color-scheme: dark) {
+    .custom-card {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .info-card {
+        background-color: #162029;
+        border-right: 5px solid #3498db;
+    }
+    
+    .success-card {
+        background-color: #162920;
+        border-right: 5px solid #2ecc71;
+    }
+    
+    .warning-card {
+        background-color: #29241a;
+        border-right: 5px solid #f39c12;
+    }
+}
